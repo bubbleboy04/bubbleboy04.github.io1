@@ -1,0 +1,95 @@
+.storeContainer{
+    display: grid;
+    background-color: rgba(34, 34, 34, 0.493);
+    grid-template-rows: repeat(var(--rows), 350px);
+    grid-template-columns: repeat(4, 350px);
+    row-gap: 50px;
+    padding:40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: rgb(24, 5, 70) 3px solid;
+    border-radius: 25px;
+}
+.center{
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: all 1s ease; 
+}
+.fadeIn{
+    opacity:1;
+}
+.fadeOut{
+    opacity: 0;
+}
+.productEntry{
+    background-color: rgba(1, 114, 134, 0);
+    border:rgb(22, 0, 117);;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin-right: 7%;
+    margin-left: 7%;
+    transform: scale(1);
+    transition: all .35s ease;
+}
+.productGrow{
+    transform: scale(1.15) translateY(-10px);
+    border-width: 5px;
+}
+.productText{
+    color: white;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    height: 0%;
+    
+    user-select: none;
+
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(22, 0, 117);
+
+    transition: all .5s ease;
+}
+.textAppear{
+    opacity: 1;
+    height: 18%;
+    
+}
+.textFade{
+    opacity: 0;
+    height: 0%;
+}
+.thumbnail{
+    width: 100%;
+    padding-top: 0px;
+    border: rgba(21, 0, 250, 0) 3px solid;
+    border-radius: 10px;
+}
+.priceTag{
+    position: absolute;
+    background-color: rgb(170, 170, 109);
+    font-weight: bolder;
+    width: 80px;
+    height: 23px;
+    top:5px;
+    left: 2.5px;
+}
+
+
+
